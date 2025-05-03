@@ -773,7 +773,7 @@ function initImageSliders() {
       if (!message) return;
       chat.innerHTML += `<div class="message user">${message}</div>`;
       input.value = '';
-      const res = await fetch("https://travel-backend-1-y1mp.onrender.com", {
+      const res = await fetch("https://travel-backend-1-y1mp.onrender.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message })
